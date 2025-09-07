@@ -1,0 +1,278 @@
+/*  */
+
+/* ==UserStyle==
+
+
+@name               Pure Wikipedia
+
+@license            CC BY-NC-ND 4.0. Usage, modification and distribution are permitted only with the author's attribution and without commercial use. Any modifications without the author's consent are prohibited. Использование, изменение и распространение разрешены только с указанием авторства и без коммерческого использования. Запрещены любые модификации без согласия автора.
+
+@namespace          https://github.com/bezustally/pure_interfaces
+
+@match              *://*.wikipedia.org/*
+@match              *://*.wikimedia.org/*
+@match              *://*.wikiquote.org/*
+@match              *://*.wikivoyage.org/*
+@match              *://*.wikisource.org/*
+@match              *://*.wiktionary.org/*
+
+@author             bezustally
+
+@version            1.10.2
+@updated            2025-09-08
+
+
+==/UserStyle== */
+
+/*  */
+
+/* #region: VARIABLES */
+
+:root {
+	--big-radius: 7px;
+	--medium-radius: 4px;
+}
+
+/* #endregion */
+
+/*  */
+
+/*  */
+
+/* #region: BORDER-RADIUS */
+
+/* border-radius: big */
+blockquote, .hatnote, .main-block.main-box, .main-top-createArticle a, .main-footer-actions a, .main-block.main-top, .main-top-left, [role="complementary"], .collapsible.expanded.mw-collapsible.mw-made-collapsible, .mw-tmh-play-icon, .interproject-box, #headertemplate + table /* poem wrapper */, code, div:has(pre), pre, #title_line, .ts-Врезка.tright.ts-Врезка-resized, .headertemplate.ws-noexport, .vertical-navbox, .uls-language-block .interlanguage-link.mw-list-item, .ts-Врезка.tleft, .hatnote.navigation-not-searchable, .cdx-button--fake-button, .grid.uls-menu.notheme.skin-invert, .navbox, .mw-file-element, #searchform, #catlinks, .infobox-title, .infobox.vevent, .plainlinks, .cdx-message, .infobox, .vector-pinnable-header-toggle-button.vector-pinnable-header-unpin-button
+/*  */ {
+	border-radius: var(--big-radius) !important;
+}
+
+/* border-radius: medium */
+.infobox-above, .infobox-header, .infobox-below, .navbox-group, .navbox-title, .ts-Боковая_навигационная_таблица-title, .ts-Боковая_навигационная_таблица-heading
+/*  */ {
+	border-radius: var(--medium-radius) !important;
+}
+
+/* left border-radius: big */
+#simpleSearch, #searchInput, .cdx-text-input.cdx-text-input--has-start-icon
+/*  */ {
+	border-top-left-radius: var(--big-radius) !important;
+	border-bottom-left-radius: var(--big-radius) !important;
+}
+
+/* right border-radius: big */
+.cdx-button.cdx-search-input__end-button
+/*  */ {
+	border-top-right-radius: var(--big-radius) !important;
+	border-bottom-right-radius: var(--big-radius) !important;
+}
+
+/* border-radius: initial */
+.image-right img , .image-left img, img[alt="Флаг"], img[alt="Изображение логотипа"], .location-map img, .flagicon img
+/*  */ {
+	border-radius: initial !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region: MARGINS & PADDINGS */
+
+/* #region: PADDING */
+
+/* padding-top: 2px */
+.infobox-image
+/*  */ {
+	padding-top: 2px !important;
+}
+
+/* padding-bottom: 5.5px */
+.vector-pinnable-header-toggle-button
+/*  */ {
+	padding-bottom: 5.5px !important;
+}
+
+/* padding-bottom: 2px */
+.vector-page-toolbar-container
+/*  */ {
+	padding-bottom: 2px !important;
+}
+
+/* padding: 3px */
+.infobox-above
+/*  */ {
+	padding: 3px !important;
+}
+
+/* #endregion */
+
+/* #region: MARGINS */
+
+/* #region: top */
+
+/* margin-top: -4px */
+.infobox
+/*  */ {
+	margin-top: -4px !important;
+}
+
+/* margin-top: 5px */
+.mw-parser-output .ambox
+/*  */ {
+	margin-top: 5px !important;
+}
+
+/* #endregion */
+
+/* #region: bottom */
+
+/* margin-bottom: 4px */
+.infobox-title, .mw-file-element
+/*  */ {
+	margin-bottom: 4px !important;
+}
+
+/* margin-bottom: 10px */
+.mw-parser-output .ambox
+/*  */ {
+	margin-bottom: 10px !important;
+}
+
+/* #endregion */
+
+/* #region: left */
+
+/* margin-left: 1.5em */
+.infobox
+/*  */ {
+	margin-left: 1.5em !important;
+}
+
+/* margin-left: 16px */
+.wikitable
+/*  */ {
+	margin-left: 16px !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #endregion */
+
+/*  */
+
+/* #region: FONT  */
+
+/* font-size: 0.6em */
+sup.reference
+/*  */ {
+	font-size: 0.6em !important;
+}
+
+/* font-style: normal */
+.hatnote.navigation-not-searchable
+/*  */ {
+	font-style: normal !important;
+}
+
+/* font-style: normal */
+.cdx-message__content > i
+/*  */ {
+	font-style: normal !important;
+}
+
+/* font-family: -apple-system */
+.poem
+/*  */ {
+	font-family: -apple-system !important;
+}
+
+/* line-height: 1.35 */
+.plainlinks
+/*  */ {
+	line-height: 1.35 !important;
+}
+
+/* text-align: justify */
+#mw-content-text
+/*  */ {
+	text-align: justify !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region: etc */
+
+* {
+	font-family: -apple-system !important;
+}
+
+/* overflow: hidden */
+.grid.uls-menu.notheme.skin-invert
+/*  */ {
+	overflow: hidden !important;
+}
+
+/* border: none */
+.cdx-message, .vector-menu-tabs .mw-list-item.selected a
+/*  */ {
+	border: none !important;
+}
+
+/* border: 1px solid gainsboro */
+#headertemplate + table /* poem wrapper */
+/*  */ {
+	border: 1px solid gainsboro !important;
+}
+
+/* width: fit-content */
+#catlinks
+/*  */ {
+	width: fit-content !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region: visibility */
+
+/* display: none */
+.mw-indicators, .mw-editsection, #siteSub
+/*  */ {
+	display: none !important;
+}
+
+/* visibility: hidden */
+.vector-pinnable-header-toggle-button.vector-pinnable-header-unpin-button /* TOC toggler */
+/*  */ {
+	visibility: hidden !important;
+}
+
+/* visibility: visible on hover */
+.vector-pinnable-header:hover .vector-pinnable-header-toggle-button.vector-pinnable-header-unpin-button /* TOC toggler */
+/*  */ {
+	visibility: visible !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region: DARK MODE  */
+
+@media (prefers-color-scheme: dark) {
+	/*  */
+
+	:root {
+		--background-color-base: #232834 !important;
+	}
+}
+
+/* #endregion */
+
+/*  */
