@@ -1,0 +1,1228 @@
+/*  */
+
+/* ==UserStyle==
+
+@name                Pure Aflt Atlassian Products Makeup
+
+@namespace           https://github.com/bezustally/pure_interfaces
+
+@match               *://*.aflt-systems.ru/*
+
+@author              bezustally
+
+@version             1.5
+@updated             2025-09-08
+
+==/UserStyle== */
+
+/*  */
+
+/* #region ORDER */
+
+/* -2 */
+.button-spinner
+ /*  */ {
+	order: -2 !important;
+}
+
+/* -1 */
+#copy-page-hierarchy-close, .search-criteria-extended, .aui-buttons:has(#rte-spinner), .button-panel-link.button-panel-cancel-link, .aui-buttons.toolbar-group-preview.toolbar-group-preview-page.toolbar-group-preview-shared-draft, .dialog-tip
+ /*  */ {
+	order: -1 !important;
+}
+
+/* 1 */
+#copy-dialog-next, #edit-issue-submit, #assign-issue-submit, li:has(#rte-button-preview), .aui-buttons.toolbar-group-edit, input.aui-button.aui-button-primary, a.button-panel-link.button-panel-cancel-link, .aui-buttons.cancel-button-container-shared-draft, #rename-filter-form > div.buttons-container.form-footer > div > input
+/*  */ {
+	order: 1 !important;
+}
+
+/* 2 */
+#content > form > div.buttons-container > div > #confirm, li:has(#view-in-hierarchy-link), #link-browser-insert, .sc-jqUVSM.fHfBhB, .sc-jqUVSM.dqspXD, .button-panel-button.button-panel-submit-button, #delete-attachment-submit, #move-button, #link-jira-issue > div.buttons-container.form-footer > div > input[type="submit"], .aui-button.aui-button-primary.tf-insert, .sc-jqUVSM.fHfBhB, #clone-issue-submit, #qed-discard-button, #delete-dialog-next, #create-issue-submit, #comment-edit-submit, #comment-delete-submit, .save-button-container, .button-panel-button.ok, #issue-link-delete-submit, .aui-button.aui-button-primary.submit, .create-dialog-create-button.aui-button.aui-button-primary, #space-welcome-dialog > div > div.dialog-button-panel > button
+ /*  */ {
+	order: 2 !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region PADDING */
+
+/* #region PADDING CONSOLIDATED */
+
+/* 0 */
+.aui-dropdown2, .sc-ewDcJz.gHswMi, .aui-dropdown2 .aui-dropdown2-section + .aui-dropdown2-section, .aui-sidebar .aui-sidebar-group, .issue-data-block
+ /*   */ {
+	padding: 0 !important;
+}
+
+/* 0 7px */
+.trigger-text
+ /*   */ {
+	padding: 0 7px;
+}
+
+/* 0 10px 0 0 */
+#pluggable-status.synchrony
+ /*   */ {
+	padding: 0 10px 0 0 !important;
+}
+
+/* 0 20px */
+.jira-sidebar-group-with-divider.aui-sidebar-group .aui-nav-heading
+ /*   */ {
+	padding: 0 20px !important;
+}
+
+/* 3 */
+.aui-label, .aui-lozenge, ul.labels li .lozenge
+ /*   */ {
+	padding: 3px !important;
+}
+
+/* 4 */
+#editor-precursor #draft-status-lozenge, .aui-label
+ /*   */ {
+	padding: 4px !important;
+}
+
+/* 10 */
+.aui-dialog2-footer, #rte-savebar
+ /*   */ {
+	padding: 10px !important;
+}
+
+/* 10px 13.5px 13px */
+#description-val
+ /*   */ {
+	padding: 10px 13.5px 13px;
+}
+
+/* #endregion */
+
+/* #region PADDING LEFT */
+
+/* 0 */
+.dialog-tip, .add-remove-customise-templates-trigger.button-panel-link, .quick-comment-body, #content-title
+ /*   */ {
+	padding-left: 0 !important;
+}
+
+/* 5 */
+form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea
+ /*   */ {
+	padding-left: 5px;
+}
+
+/* 7 */
+form.aui:not(.aui-legacy-forms) .text
+ /*   */ {
+	padding-left: 7px !important;
+}
+
+/* 10 */
+li.ghx-column.jxls-agile-board-header
+/*   */ {
+	padding-left: 10px !important;
+}
+
+/* 20 */
+.aui-sidebar .aui-navgroup.aui-navgroup-vertical .aui-nav > li > .aui-nav-item
+ /*   */ {
+	padding-left: 20px !important;
+}
+
+/* 25 */
+#project-field, #priority-field, #issuetype-field, #assignee-field
+ /*   */ {
+	padding-left: 25px !important;
+}
+
+/* #endregion */
+
+/* #region PADDING RIGHT */
+
+/* 0 */
+#pluggable-status.synchrony
+ /*   */ {
+	padding-right: 0px !important;
+}
+
+/* 10 */
+.aui-dialog2-header
+ /*   */ {
+	padding-right: 10px !important;
+}
+
+/* #endregion */
+
+/* #region PADDING TOP */
+
+/* 0 */
+.user-profile .page-item
+ /*   */ {
+	padding-top: 0 !important;
+}
+
+/* 6.5 */
+.quick-comment-prompt, .quick-comment-loading-container
+ /*   */ {
+	padding-top: 6.5px !important;
+}
+
+/* 10 */
+footer.sc-bGWzfD.eFpZEN
+ /*   */ {
+	padding-top: 10px !important;
+}
+
+/* 21 */
+.acs-side-bar-space-info
+ /*   */ {
+	padding-top: 21px !important;
+}
+
+/* #endregion */
+
+/* #region PADDING BOTTOM */
+
+/* 0 */
+#comment-edit-hint
+ /*   */ {
+	padding-bottom: 0;
+}
+
+/* 5 */
+#rte-savebar
+ /*   */ {
+	padding-bottom: 5px !important;
+}
+
+/* 12 */
+.sd-activity-comment.issue-data-block.twixi-block
+ /*   */ {
+	padding-bottom: 12px !important;
+}
+
+/* 15 */
+.sc-caXVBt.fBKiaP
+ /*  */ {
+	padding-bottom: 15px !important;
+}
+
+/* 20 */
+.sc-ehMyHa.kCGWmZ
+ /*  */ {
+	padding-bottom: 20px !important;
+}
+
+/* 46 */
+.acs-side-bar-space-info.tipsy-enabled
+ /*  */ {
+	padding-bottom: 46px !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region MARGIN */
+
+/* #region MARGIN CONSOLIDATED */
+
+/* 0 */
+.gadget .gadget-menu > ul, .acs-side-bar-space-info
+ /*   */ {
+	margin: 0 !important;
+}
+
+/* 10px */
+.ghx-issue
+ /*   */ {
+	margin: 10px !important;
+}
+
+/* #endregion */
+
+/* #region MARGIN TOP */
+
+/* #region minus */
+
+/* -67 */
+#ghx-operations
+	/*   */ {
+	margin-top: -67px !important;
+}
+
+/* -40 */
+.ia-secondary-container
+	/*   */ {
+	margin-top: -40px !important;
+}
+
+/* -19 */
+.ic-container #savebar-container
+ /*    */ {
+	margin-top: -19px !important;
+}
+
+/* -7 */
+.editable-field .save-options
+ /*    */ {
+	margin-top: -7px !important;
+}
+
+/* -4 */
+#rte-spinner
+ /*    */ {
+	margin-top: -4px !important;
+}
+
+/* -1 */
+.ic-display-reply
+	/*   */ {
+	margin-top: -1px;
+}
+
+/* -0.5 */
+#rte-savebar .minor-edit
+ /*   */ {
+	margin-top: -0.5px !important;
+}
+
+/* #endregion */
+
+/* 0 */
+.aui-sidebar-wrapper, .aui-dropdown2 .aui-dropdown2-section
+ /*   */ {
+	margin-top: 0 !important;
+}
+
+/* 2 */
+#action-menu, .aui-nav .aui-buttons
+ /*   */ {
+	margin-top: 2px !important;
+}
+
+/* 10 */
+.sc-eGAhfa.fTygoa.ps-child, #ghx-detail-contents, .mod-content.issue-drop-zone, .childpages-macro
+ /*  */ {
+	margin-top: 10px !important;
+}
+
+/* 15 */
+#title-heading
+ /*   */ {
+	margin-top: 15px !important;
+}
+
+/* 20 */
+.filter-title, .content-sidebar
+ /*   */ {
+	margin-top: 20px !important;
+}
+
+/* 25 */
+#addcomment, .SearchDrawerPanel_drawer-panel-content__2uGQD
+ /*   */ {
+	margin-top: 25px;
+}
+
+/* 27 */
+.twixi-wrap.verbose.actionContainer
+ /*   */ {
+	margin-top: 27px !important;
+}
+
+/* #endregion */
+
+/* #region MARGIN BOTTOM */
+
+/* -20px */
+#description-val
+ /*   */ {
+	margin-bottom: -20px !important;
+}
+
+/* 20px */
+#addcomment
+ /*   */ {
+	margin-bottom: 20px;
+}
+
+/* #endregion */
+
+/* #region MARGIN LEFT */
+
+/* -10 */
+#rte-ellipsis-menu, .aui-sidebar[aria-expanded=false] .aui-sidebar-group.aui-sidebar-group-tier-one
+ /*   */ {
+	margin-left: -10px !important;
+}
+
+/* 0 */
+#copy-page-hierarchy-submit
+ /*   */ {
+	margin-left: 0 !important;
+}
+
+/* 10 */
+#rte-button-publish
+ /*   */ {
+	margin-left: 10px !important;
+}
+
+/* 15 */
+.aui-label-split-close
+ /*   */ {
+	margin-left: 15px !important;
+}
+
+/* #endregion */
+
+/* #region MARGIN RIGHT */
+
+/* #region minus */
+
+/* -15 */
+#rte-savebar .aui-buttons
+ /*   */ {
+	margin-right: -15px !important;
+}
+
+/* -10 */
+#rte-ellipsis-menu, #rte-savebar .aui-buttons.cancel-button-container-shared-draft
+ /*   */ {
+	margin-right: -10px !important;
+}
+
+/* -4 */
+.aui-label-split-close
+ /*   */ {
+	margin-right: -4px !important;
+}
+
+/* #endregion */
+
+/* 0 */
+.button-panel-button.ok, #rte-savebar .save-button-container, #link-browser-insert
+ /*   */ {
+	margin-right: 0 !important;
+}
+
+/* 5 */
+#rte-savebar .aui-buttons.toolbar-group-preview.toolbar-group-preview-page.toolbar-group-preview-shared-draft
+ /*   */ {
+	margin-right: 5px !important;
+}
+
+/* 10 */
+#attachmentmodule #file_attachments .attachment-content .attachment-size
+ /*   */ {
+	margin-right: 10px !important;
+}
+
+/* auto */
+.button-panel-link.dialog-back-link, .dialog-tip
+ /*   */ {
+	margin-right: auto !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/*  */
+/*  */
+
+/* #region BACKGROUND */
+
+/* transparent */
+.dialog-tip .button-panel-link.dialog-back-link, #macro-param-hidePane-group, .button-panel-link.dialog-back-link, .add-remove-customise-templates-trigger.button-panel-link, li.ghx-column.jxls-agile-board-header, .ic-reply-container #rte-ellipsis-menu
+/*   */ {
+	background: transparent !important;
+}
+
+/* white */
+html, .ic-display-reply, #assign-dialog, #savebar-container, #main-header
+/*   */ {
+	background-color: white !important;
+}
+
+/* rgb(0, 82, 204) - primary blue */
+.sc-jqUVSM.fHfBhB, /* Add filter button */ .aui-button.tf-button-save, #confirm, #comment-edit-submit, #assign-issue-submit, #comment-delete-submit, #issue-link-delete-submit, #delete-attachment-submit, #rename-filter-form > div.buttons-container.form-footer > div > input, #link-jira-issue > div.buttons-container.form-footer > div > input[type="submit"], #clone-issue-submit
+/*   */ {
+	background-color: rgb(0, 82, 204) !important;
+}
+
+/* #0065ff - hover blue */
+.sc-jqUVSM.fHfBhB:hover
+/*   */ {
+	background-color: #0065ff !important;
+}
+
+/* #de350b - danger red */
+#qed-discard-button
+/*   */ {
+	background-color: #de350b !important;
+}
+
+/* #f4f5f7 */
+.space-tools-section
+/*   */ {
+	background: #f4f5f7 !important;
+}
+
+/* var(--aui-body-background) */
+.ia-secondary-header-title.page-tree
+/*   */ {
+	background: var(--aui-body-background) !important;
+}
+
+/* #endregion */
+
+/* #region BORDER */
+
+/* none */
+main, .ic-replies, #browse-projects-page
+ /*   */ {
+	border: none !important;
+}
+
+/* 0.5px */
+.issue-data-block
+ /*   */ {
+	border-width: 0.5px;
+}
+
+/* 1px solid #ccc */
+.ic-display-reply
+ /*   */ {
+	border: 1px solid #ccc;
+}
+
+/* 1px solid #dfe1e6 */
+form.aui:not(.aui-legacy-forms) .checkbox input:not(:checked) + .aui-form-glyph:before, .metadata.author a, form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea
+ /*   */ {
+	border: 1px solid #dfe1e6;
+}
+
+/* border-top: none */
+.aui-dropdown2 .aui-dropdown2-section + .aui-dropdown2-section
+ /*   */ {
+	border-top: none !important;
+}
+
+/* #endregion */
+
+/* #region BOX-SHADOW */
+
+/* box-shadow: none */
+.spreadsheets-dialog, #rte-ellipsis-menu
+ /*   */ {
+	box-shadow: none !important;
+}
+
+/* box-shadow: 1px 1px 20px lightgray */
+.aui-dropdown2 a:focus, .aui-dropdown2 button:focus, .aui-dropdown2 .aui-dropdown2-radio:focus, .aui-dropdown2 .aui-dropdown2-checkbox:focus, html:not(.aui-no-focusvisible) .aui-layer:focus-visible, #action-menu
+ /*   */ {
+	box-shadow: 1px 1px 20px lightgray;
+}
+
+/* box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25) */
+.aui-dropdown2
+ /*   */ {
+	box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25) !important;
+}
+
+/* box-shadow: 1px 1px 20px rgba(9, 30, 66, 0.25) */
+.aui-flag .aui-message
+ /*   */ {
+	box-shadow: 1px 1px 20px rgba(9, 30, 66, 0.25);
+}
+
+/* #endregion */
+
+/* #region COLOR */
+
+/* white */
+#confirm, #comment-edit-submit, /* Add filter button */ .aui-button.tf-button-save, #qed-discard-button, #assign-issue-submit, #comment-delete-submit, #issue-link-delete-submit, #delete-attachment-submit, #rename-filter-form > div.buttons-container.form-footer > div > input, #link-jira-issue > div.buttons-container.form-footer > div > input[type="submit"], #clone-issue-submit
+/* color: white */ {
+	color: white !important;
+}
+
+/* initial */
+.metadata.author a
+ /*   */ {
+	color: initial;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region: FLEX  */
+
+/* #region FLEX PROPERTIES */
+
+/* justify-content: center */
+.mod-footer li, ul.childpages-macro
+ /*   */ {
+	justify-content: center !important;
+}
+
+/* justify-content: space-between */
+li.ghx-column.jxls-agile-board-header, .dashboard-item-header, #assign-issue .buttons-container.form-footer
+ /*   */ {
+	justify-content: space-between !important;
+}
+
+/* justify-content: end */
+.aui-dialog2-footer-actions, .sc-fytwQQ.gskAyi, .gadget .dashboard-item-header > .gadget-menu, .dialog-button-panel, .sc-fmrZth.fGOdXh
+ /*   */ {
+	justify-content: end !important;
+}
+
+/* #endregion */
+
+/* #region FLEX DIRECTION */
+
+/* row */
+.toolbar-split.toolbar-split-right, .qf-create-another, .aui-toolbar2-primary, .wiki-button-bar-content
+/*   */ {
+	flex-direction: row !important;
+}
+
+/* row-reverse */
+#rte-ellipsis-menu, li.ghx-column.jxls-agile-board-header, #assign-issue .buttons-container.form-footer
+/*   */ {
+	flex-direction: row-reverse !important;
+}
+
+/* column */
+.editor-container, ul.childpages-macro, .contenteditor #main .edit form, #action-menu-secondary
+/*   */ {
+	flex-direction: column !important;
+}
+
+/* column-reverse */
+#action-menu-modify
+/*   */ {
+	flex-direction: column-reverse !important;
+}
+
+/* #endregion */
+
+/* #region FLEX WRAP */
+
+/* wrap */
+ul.childpages-macro
+/*   */ {
+	flex-wrap: wrap !important;
+}
+
+/* #endregion */
+
+/* #region FLEX GAP */
+
+/* 0 */
+.quick-comment-form.aui.fadeIn .editor-container
+/*   */ {
+	gap: 0px !important;
+}
+
+/* 2 */
+#property-panel .panel-buttons, #qf-create-another
+/*   */ {
+	gap: 2px !important;
+}
+
+/* 3 */
+.aui-toolbar2-primary
+/*   */ {
+	gap: 3px !important;
+}
+
+/* 5 */
+#macro-param-hidePane-group, .jira-dialog2 footer .buttons
+/*   */ {
+	gap: 5px !important;
+}
+
+/* 6 */
+.eXagFC
+/*   */ {
+	gap: 6px !important;
+}
+
+/* 8 */
+ul.childpages-macro
+/*   */ {
+	gap: 8px !important;
+}
+
+/* 10 */
+.toolbar-split.toolbar-split-right, .wiki-button-bar-content, .aui-dialog2-footer-actions, .dialog-button-panel, form.aui .buttons-container > .buttons, .sc-fytwQQ.gskAyi
+/*   */ {
+	gap: 10px !important;
+}
+
+/* 19 */
+.editor-container
+/*   */ {
+	gap: 19px !important;
+}
+
+/* #endregion */
+
+/* #region FLEX ALIGN ITEMS */
+
+/* baseline */
+#assign-issue .buttons-container.form-footer
+/*   */ {
+	align-items: baseline !important;
+}
+
+/* center */
+#rte-savebar .toolbar-split, .dashboard-item-header, #rte-ellipsis-menu
+/*   */ {
+	align-items: center !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/*  */
+
+/* #region FONT */
+
+/* #region FONT SIZE */
+
+/* font-size: 0 */
+form.aui .buttons-container > .buttons
+ /*   */ {
+	font-size: 0;
+}
+
+/* font-size: 13px */
+.status-indicator-message
+ /*   */ {
+	font-size: 13px !important;
+}
+
+/* font-size: 13.5px */
+#pluggable-status.synchrony
+ /*   */ {
+	font-size: 13.5px !important;
+}
+
+/* #endregion */
+
+/* #region FONT WEIGHT */
+
+/* font-weight: bold */
+#qed-discard-button
+ /*   */ {
+	font-weight: bold !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/*  */
+
+/* #region WIDTH */
+
+/* #region min-width */
+
+/* unset */
+#pluggable-status.synchrony, #rte-button-preview
+ /*   */ {
+	min-width: unset !important;
+}
+
+/* #endregion */
+
+/* #region max-width */
+
+/* max-width: unset */
+.ghx-issue .ghx-highlighted-fields .ghx-highlighted-field .aui-label, #rte-ellipsis-menu, #rte-button-preview
+ /*   */ {
+	max-width: unset !important;
+}
+
+/* max-width: 230px */
+#sidebar, .aui-sidebar .aui-sidebar-wrapper
+ /*   */ {
+	max-width: 230px !important;
+}
+
+/* max-width: 8em */
+.nav.assignee
+ /*   */ {
+	max-width: 8em !important;
+}
+
+/* #endregion */
+
+/* fit-content */
+#assign-dialog
+ /*   */ {
+	width: fit-content !important;
+}
+
+/* max-content */
+#action-menu
+ /*   */ {
+	width: max-content !important;
+	width: -webkit-max-content !important;
+}
+
+/* unset */
+.comment
+ /*   */ {
+	width: unset !important;
+}
+
+/* #region % */
+
+/* 5 */
+#browse-projects-page table.aui .project-list-type
+ /*   */ {
+	width: 5% !important;
+}
+
+/* 55 */
+.gadget
+ /*   */ {
+	width: 55% !important;
+}
+
+/* 98 */
+.spreadsheets-dialog
+ /*   */ {
+	width: 98%;
+}
+
+/* 100 */
+#savebar-container, #header, .gadget.default.needs-min
+ /*   */ {
+	width: 100% !important;
+}
+
+/* #endregion */
+
+/* #region px */
+
+/* 13 */
+form.aui:not(.aui-legacy-forms) .checkbox input:not(:checked) + .aui-form-glyph:before
+ /*   */ {
+	width: 13px;
+}
+
+/* 25 */
+#attachmentmodule #file_attachments .attachment-content .attachment-delete
+ /*   */ {
+	width: 25px !important;
+}
+
+/* 80 */
+#attachmentmodule #file_attachments .attachment-content .attachment-size
+ /*   */ {
+	width: 80px !important;
+}
+
+/* 150 */
+.acs-side-bar .acs-side-bar-space-info .name
+ /*   */ {
+	width: 150px !important;
+}
+
+/* 556 */
+.ic-display-reply, .ic-comment-container, .ic-reply-container
+ /*   */ {
+	width: 556px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region HEIGHT */
+
+/* #region max-height */
+
+/* max-height: unset */
+.ghx-issue-fields .ghx-summary .ghx-inner
+ /*   */ {
+	max-height: unset !important;
+}
+
+/* max-height: 84vh */
+#wysiwyg
+ /*   */ {
+	max-height: 84vh !important;
+}
+
+/* #endregion */
+
+/* #region % */
+
+/* 90% */
+#wysiwyg
+ /*   */ {
+	height: 90%;
+}
+
+/* 96% */
+.spreadsheets-dialog
+ /*   */ {
+	height: 96%;
+}
+
+/* #endregion */
+
+/* height: fit-content */
+li.ghx-column.jxls-agile-board-header, .ghx-controls, #assign-dialog
+ /*   */ {
+	height: fit-content !important;
+}
+
+/* height: 1px */
+.aui-tabs.horizontal-tabs > .tabs-menu:before
+ /*   */ {
+	height: 1px;
+}
+
+/* height: 13px */
+form.aui:not(.aui-legacy-forms) .checkbox input:not(:checked) + .aui-form-glyph:before
+ /*   */ {
+	height: 13px;
+}
+
+/* height: 26px */
+.property-list .item .value
+ /*   */ {
+	height: 26px;
+}
+
+/* height: 33px */
+.dashboard-item-header
+ /*   */ {
+	height: 33px;
+}
+
+/* height: 42px */
+#header
+ /*   */ {
+	height: 42px;
+}
+
+/* height: 100vh */
+#page, .contenteditor #main
+ /*   */ {
+	height: 100vh !important;
+}
+
+/* height: calc(100vh - 31px) */
+#content
+ /*   */ {
+	height: calc(100vh - 31px) !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region OVERFLOW */
+
+/* overflow: auto */
+.nav.assignee
+ /*   */ {
+	overflow: auto !important;
+}
+
+/* #region: y */
+
+/* overflow-y: scroll */
+.ghx-columns, .ghx-columns > li
+ /*   */ {
+	overflow-y: scroll !important;
+}
+
+/* overflow-y: hidden */
+#ghx-pool-column, .property-list .item .value
+ /*   */ {
+	overflow-y: hidden !important;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region POSITION */
+
+/* absolute */
+.sc-ehMyHa.kCGWmZ, #savebar-container
+ /*   */ {
+	position: absolute !important;
+}
+
+/* initial */
+.gadget .dashboard-item-header > .gadget-menu, #rte-ellipsis-menu, .quick-comment-form #savebar-container, .ic-container #savebar-container
+ /*   */ {
+	position: initial !important;
+}
+
+/* fixed */
+#editpageform #savebar-container, #createpageform #savebar-container
+ /*   */ {
+	position: fixed !important;
+}
+
+/* relative */
+#qf-create-another, #rte-show-changes, .aui-label-split-close, .gadget.default.needs-min, .sc-hsOonA.cNCOar [data-focus-lock-disabled="false"], #gadget-0, #gadget-1, .project-summary-section.activity-stream, .ia-secondary-content
+ /*   */ {
+	position: relative !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region TOP */
+
+/* #region minus */
+
+/* top: -20px */
+.editor-container #wysiwyg
+ /*   */ {
+	top: -20px !important;
+}
+
+/* top: -5.5px */
+#likes-section, #space-tools-menu-trigger, .actionContainer .action-comment-actions
+ /*   */ {
+	top: -5.5px;
+}
+
+/* #endregion */
+
+/* 0 */
+.editor-container #toolbar
+ /*   */ {
+	top: 0 !important;
+}
+
+/* 0.33 */
+#create-menu
+ /*   */ {
+	top: 0.33px !important;
+}
+
+/* 1.5 */
+.aui-label-split-close
+ /*   */ {
+	top: 1.5px !important;
+}
+
+/* 2 */
+#qf-create-another, #rte-show-changes
+ /*   */ {
+	top: 2px !important;
+}
+
+/* 8 */
+.gadget .gadget-menu > ul
+ /*   */ {
+	top: 8px !important;
+}
+
+/* 40 */
+.cp-header
+ /*   */ {
+	top: 40px !important;
+}
+
+/* 2% */
+.spreadsheets-dialog
+ /*   */ {
+	top: 2% !important;
+}
+
+/* 50%, transform: translateY(-50%) */
+.aui-dialog2.aui-layer, .sc-hsOonA.cNCOar [data-focus-lock-disabled="false"]
+ /*   */ {
+	top: 50% !important;
+	transform: translateY(-50%);
+}
+
+/* 50%, transform: translate(-50%, -50%) */
+.sc-ehMyHa.kCGWmZ
+ /*   */ {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* unset */
+#ghx-errors
+ /*   */ {
+	top: unset !important;
+}
+
+/* #endregion */
+
+/* #region BOTTOM */
+
+/* bottom: 0 */
+#savebar-container
+ /*   */ {
+	bottom: 0 !important;
+}
+
+/* bottom: 1px */
+.aui-page-panel-content .default-list-view .item-status
+ /*   */ {
+	bottom: 1px;
+}
+
+/* #endregion */
+
+/* #region LEFT */
+
+/* left: 0 */
+.space-tools-section, .project-summary-section.activity-stream
+ /*   */ {
+	left: 0 !important;
+}
+
+/* left: 50% */
+.gadget.default.needs-min, #gadget-0, #gadget-1, .gadget
+ /*   */ {
+	left: 50% !important;
+}
+
+/* #endregion */
+
+/* #region RIGHT */
+
+/* 3 */
+.gadget .gadget-menu > ul
+ /*   */ {
+	right: 3px !important;
+}
+
+/* 280 */
+.ic-display-reply, .ic-comment-container, .ic-reply-container, .ic-sidebar
+ /*   */ {
+	right: 280px !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region Z-INDEX */
+
+/* -1 */
+.editable-field .save-options
+/*   */ {
+	z-index: -1 !important;
+}
+
+/* 200 */
+.ic-display-reply, .ic-comment-container, .ic-reply-container, .acs-side-bar-space-info.tipsy-enabled, #main
+/*   */ {
+	z-index: 20 !important;
+}
+
+/* 2000 */
+#rte-ellipsis-menu
+/*   */ {
+	z-index: 1000 !important;
+}
+
+/* 20000 */
+.comment, #rte-savebar .aui-buttons
+/*   */ {
+	z-index: 2000 !important;
+}
+
+/* 200000 */
+#header nav.aui-header, #header
+/*   */ {
+	z-index: 11000 !important;
+}
+
+/* 2000000 */
+.ia-secondary-header-title.page-tree
+/*   */ {
+	z-index: 2000000 !important;
+}
+
+/* #endregion */
+
+/*  */
+
+/* #region MISC */
+
+/* transform: translateX(-50%) */
+.gadget
+ /*   */ {
+	transform: translateX(-50%);
+}
+
+/* inset: initial */
+#rte-ellipsis-menu
+ /*   */ {
+	inset: initial !important;
+}
+
+/* opacity: 0 */
+#likes-section, #space-tools-menu-trigger, .actionContainer .action-comment-actions, #darktheme-switch-navigation-link, .no-labels-message, .no-labels-message  +.labels-edit-container
+ /*   */ {
+	opacity: 0 !important;
+}
+
+/* opacity: 1 */
+#likes-section:hover, #space-tools-menu-trigger:hover, .actionContainer .action-comment-actions:hover, #darktheme-switch-navigation-link:hover, .label-list:hover .no-labels-message, .label-list:hover .labels-edit-container
+ /*   */ {
+	opacity: 1 !important;
+}
+
+/* vertical-align: middle */
+.property-list .item .value, .confluenceTd.tf-numbering, table.confluenceTable td.numberingColumn, th
+ /*   */ {
+	vertical-align: middle !important;
+}
+
+/* text-align: center */
+.confluenceTd.tf-numbering, .headerButton
+ /*   */ {
+	text-align: center !important;
+}
+
+/* pointer-events: none */
+.metadata.author a
+ /*   */ {
+	pointer-events: none !important;
+}
+
+/* user-select: none */
+#rte-savebar label, /* Notify watchers */ .minor-edit.toolbar-item
+ /*   */ {
+	-webkit-user-select: none !important;
+	user-select: none !important;
+}
+
+/* overflow: unset, text-overflow: unset */
+.ghx-issue .ghx-highlighted-fields .ghx-highlighted-field .aui-label
+ /*   */ {
+	overflow: unset !important;
+	text-overflow: unset !important;
+}
+
+/* #endregion */
