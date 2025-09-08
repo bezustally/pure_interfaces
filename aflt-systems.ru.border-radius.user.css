@@ -1,0 +1,90 @@
+/*  */
+
+/* ==UserStyle==
+
+@name              AFLT Border Radius
+
+@namespace         https://github.com/bezustally/pure_interfaces
+
+@match             *://*.aflt-systems.ru/*
+
+@author            bezustally
+
+@version           1.6
+@updated           2025-09-08
+
+==/UserStyle== */
+
+/*  */
+
+/* 0 */
+.sc-jqUVSM.kZvWGe.sc-tsFYE.eSFbSe, .spreadsheets-dialog, .spreadsheets-dialog, .aui-nav-vertical > li, .aui-nav-vertical > li > a, .sc-jqUVSM.glgKP.sc-tsFYE.eSFbSe, .aui-navgroup-vertical .aui-nav > li, .aui-navgroup-vertical .aui-nav > li > a, .aui-sidebar-submenu .aui-navgroup-vertical .aui-nav > li > .aui-nav-item, .aui-sidebar .aui-navgroup-vertical .aui-nav > li > .aui-nav-item
+ /*   */ {
+	border-radius: 0 !important;
+}
+
+/* 2 em */
+aui-badge
+ /*   */ {
+	border-radius: 2em !important;
+}
+
+/* 5 */
+.confluence-information-macro, .aui-label, .aui-lozenge, ul.labels li .lozenge, .tt_graph td
+ /*   */ {
+	border-radius: 5px !important;
+}
+
+/* 6 */
+form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea
+ /*   */ {
+	border-radius: 6px !important;
+}
+
+/* 7 — STANDARD */
+.panel, .code, #delete-attachment-dialog, .sc-caXVBt.fBKiaP /* log time modal on task page */, #attachment-removal-confirm-dialog, #drag-and-drop-progress-dialog, #copy-page-hierarchy-dialog, #edit-labels-dialog, #description-val, #endDate, #endTime, #started, #toolbar, .ghx-issue, #startTime, input.text, .aui-button, .css-i46fik, .css-7opq43, #add-gadget, #edit-issue, .css-1rfp431, .css-1rfp431, #create_link, #move-button, .css-12ypsoc, .css-1cab8vv, .css-1lb2paw, #edit-comment, #addSpaceLink, #create-dialog, #comment-issue, #gadget-dialog, .select2-choice, #layout-changer, #rte-button-edit, #rte-show-revert, .sc-jqUVSM.glgKP, .sc-BeQoi.gyncMH, .sc-evZas.ftIpLw, #copy-page-dialog, #rte-show-changes, .sc-cTQhss.gwKKdf, .sc-hKMtZM.iPwLqz, .sc-jqUVSM.efantw, .sc-dxKplh.gpYulL, .sc-jqUVSM.fHfBhB, .sc-ehMyHa.kCGWmZ, button.css-xvqeni, #issuePickerInput, #quickSearchInput, #timeSpentSeconds, #edit-issue-dialog, #rte-button-cancel, #customfield_10311, #remainingEstimate, #insert-link-dialog, #clone-issue-dialog, #quick-search-query, #rte-button-preview, .aui-property-panel, #link-browser-insert, #create-issue-dialog, .quick-comment-prompt, #macro-browser-dialog, div#save-filter-dialog, #footer-comment-button, .button-panel-button.ok, #image-properties-dialog, #create-dialog .template, #opsbar-transitions_more, ._2vjFij0ayH._30jD7Sgf0G, .aui-button.toggle-title, .cp-unknown-file-type-view, #s2id_space-select-input > a, .quick-comment-loading-container, .sc-iUIdfH.cpBtnq.card-draggable, #create-dialog .template.selected, .button-panel-button.button-panel-submit-button, #comments-section .comment-body form .editor-container, .aui-button.aui-dropdown2-trigger.aui-dropdown2-trigger-arrowless, .sc-hKMtZM.iPwLqz.sc-hAZoDl.iXhbPy.tempo-card-actions-menu.drag-ignore-element,.collapsed-actions.collapsed-all-tabpanel.show-more-all-tabpanel.show-more-tab-items.aui-button, .collapsed-actions.collapsed-comment-tabpanel.show-more-comment-tabpanel.show-more-tab-items.aui-button, .sc-iUIdfH.cylctG.card-draggable, .sc-bWIbvL.iITTKP.issue-draggable, .sc-eGAhfa.fTygoa.ps-child, #create-subtask-dialog, #rename-filter-dialog, #view-workflow-dialog, #space-welcome-dialog, #insert-image-dialog, #delete-page-dialog, #action-menu, .aui-message, .avatar-img, #endDate, .sc-cTQhss.kEIIZq.sc-icOqvn.hdbiQI.ajs-dirty-warning-exempt, #opsbar-operations_more_drop, #create-linked-issue-dialog, .sc-jqUVSM.eLPKgn, .sc-dPyBCJ.dVTFZj, .sc-jqUVSM.eLYdgW, .sc-jqUVSM.glgKP, .sc-hKMtZM.iPwLqz > .sc-jqUVSM.eLPKgn, .issue-drop-zone, .sc-iUIdfH, .eqqsSH, .sc-dxKplh.bzVJoU, .sc-dxKplh.kjIhCu, [name="tempoAddPlanWorkButton"], .sc-bmyKNl.jtobnA, .sc-dxKplh.imUJqz, .sc-dxKplh.gxqlUX, #assign-dialog, #delete-issue-link-dialog, #comment, #tempo-nav > div.sc-gkJlnC.kJHIU > div > div.sc-ihNHHr.cXHDFb > div.sc-eIWpXs.hQuUcY > button, #quit-editor-dialog, #table-filter-dialog, .mod-content.issue-drop-zone, #link-issue-dialog
+ /*   */ {
+	border-radius: 7px !important;
+}
+
+/* 7px top */
+.aui-dialog2-header, #wiki-edit-wikiEdit0, #wiki-edit-wikiEdit1, #wiki-edit-wikiEdit2, .dashboard-item-header, #comments-section #rte-toolbar
+ /*   */ {
+	border-radius: 7px 7px 0 0 !important;
+}
+
+/* 7px bottom */
+.save-options.show-button-bar, .gadget .dashboard-item-content, form.aui .jira-wikifield ~ .save-options.wiki-button-bar, .sd-rte-bar
+ /*   */ {
+	border-radius: 0 0 7px 7px !important;
+}
+
+/* 7px left  */
+#assign-issue, .sc-dnqGjD.UATdV, .sc-jqUVSM.eLPKgn, .sc-jqUVSM.kZvWGe, .gpYulL .sc-dnqGjD, #toggle-vote-issue, #jira-share-trigger, #schedule-web-item-link, #quick-create-page-button, #tempoIssuePickerSections > #RECENT, .sc-jqUVSM.iuTyql.sc-ksZaOG.kAGkCn
+ /*   */ {
+	border-top-left-radius: 7px !important;
+	border-bottom-left-radius: 7px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+/* 7px right */
+.sc-iPAHXo.biTXxa, .sc-iPAHXo.biTXxa, #viewissue-export, #create-page-button, #opsbar-operations_more, .sc-jqUVSM.iuTyql.sc-breuTD.hZnXOm, .sc-evZas.ftIpLw > .sc-jqUVSM.eLYdgW, .aui-buttons #create-page-button.aui-button:first-child, .sc-jqUVSM.glgKP, .overlay-icon.aui-icon.aui-icon-small.aui-iconfont-edit
+ /*   */ {
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 7px !important;
+	border-bottom-right-radius: 7px !important;
+}
+
+/* 7rx */
+#Type-Icon-Background
+ /*   */ {
+	rx: 7px; /*igrore */
+}
+
+/* 50% */
+.sc-idiyUo.jjTJXV, .aui-avatar-inner, .issue-data-block .twixi, .jira-project-avatar-icon, .aui-ss-entity-icon.rounded, #user-menu-link > div > div > img, .collaborative-avatars-list .avatar > img
+ /*   */ {
+	border-radius: 50% !important;
+}
