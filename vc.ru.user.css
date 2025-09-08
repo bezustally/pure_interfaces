@@ -1,0 +1,40 @@
+/*  */
+
+/* ==UserStyle==
+
+@name               Pure VC.ru
+
+@namespace          https://github.com/bezustally/pure_interfaces
+
+@match              *://*.vc.ru/*
+
+@author             bezustally
+
+@version            1.0
+@updated            2025-09-08
+
+==/UserStyle== */
+
+/*  */
+
+/* display: none */
+.aside.aside--right, .supbar.supbar--top, .rotator.entry-rotator, .rotator.feed-page__banner, .header__main a
+/*  */ {
+	display: none !important;
+}
+
+/* opacity: 0 */
+.sidebar
+/*  */ {
+	opacity: 0 !important;
+}
+
+/* opacity: 1 */
+.sidebar:hover
+/*  */ {
+	opacity: 1 !important;
+}
+
+.layout {
+	grid-template-columns: 1fr 2.5fr 1fr !important;
+}
