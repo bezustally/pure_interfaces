@@ -1,0 +1,30 @@
+/*  */
+
+/* ==UserStyle==
+
+@name               Pure Consultant
+
+@namespace          https://github.com/bezustally/pure_interfaces
+
+@match              *://*.consultant.ru/*
+
+@author             bezustally
+
+@version            1.0
+@updated            2025-09-09
+
+==/UserStyle== */
+
+/*  */
+
+/* font-family: arial */
+body, body .document.content, .document-page__content, .notes__link, .notes__title, .document-page__toc
+/*  */ {
+	font-family: arial;
+}
+
+/* font-size: 16.5px */
+body .document.content
+/*  */ {
+	font-size: 16.5px;
+}
