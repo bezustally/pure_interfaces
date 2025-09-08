@@ -1,0 +1,48 @@
+/*  */
+
+/* ==UserStyle==
+
+@name              AFLT Display Properties
+
+@namespace         https://github.com/bezustally/pure_interfaces
+
+@match             *://*.aflt-systems.ru/*
+
+@author            bezustally
+
+@version           1.6
+@updated           2025-09-08
+
+==/UserStyle== */
+
+/*  */
+
+/* Hiding priority field */
+#issuedetails .item:has(label[for="priority-field"])
+/*  */ {
+	display: none;
+}
+
+/* Hiding labels field if there're no labels */
+#wrap-labels:has(span:is(#labels-135635-value, #labels-136722-value, #labels-123526-value, #labels-135379-value, #labels-134551-value))
+/*  */ {
+	display: none;
+}
+
+/* none */
+#footer, .sc-bKhNmF.LBFFT:has(#remainingEstimate), .sc-kUGxgu.bMXXIt /* Bottom Bar In Tempo Right Sidebar */, #biggantt-mainMenu /* BigGannt (in nav.menu) */, #bigpicture-mainMenu /* BigPicture (in nav.menu) */, /* Plans (in nav.menu) */ #plugins-jira-webitem-main, /* B2B / B2C Победы  */ .view-my-favourites .all-favourited-content tr:has(a[title="B2B / B2C Победы"]), /* Votes */ .item-details dl:has(dt[title="Votes"]), #help-menu-link, /* Page History */ #action-view-history-link, #action-view-source-link, #import-word-doc, #ppm-wbs-issue-details-panel-bigpicture, /* stage field in task info */ #rowForcustomfield_10311, /* account field in task info */ #rowForcustomfield_10207, #notifications-anchor, #space-favourite-remove, li:has(#jira-header-feedback-link), #enhanced-search-section-message-container-panel, #system-help-menu, #rapidb_lnk_17, #rapidb_lnk_85, #greenhopper_menu_dropdown, #greenhopper_menu-content strong, .ghx-agile.ghx-rapid-views #sidebar, .ghx-type, .ghx-flags, .ghx-avatar, #ghx-board-name, #rte-button-ellipsis, #tempo-issue-view-panel, .comment .comment-user-logo, #ppm-wbs-issue-details-panel-biggantt
+ /*   */ {
+	display: none !important;
+}
+
+/* initial */
+.attachment-author
+ /*   */ {
+	display: initial !important;
+}
+
+/* flex */
+.mod-footer li, .search-criteria-container, #action-menu-secondary, #action-menu-modify, .toolbar-split.toolbar-split-right, .contenteditor #main .edit form, #assign-issue .buttons-container.form-footer, .sc-fytwQQ.gskAyi, ul.childpages-macro, .aui-dialog2-footer-actions, ul.labels, .attachment-content dl, .wiki-button-bar-content, #content > form > div.buttons-container > div, .sc-fmrZth.fGOdXh, .editor-container, .qf-create-another, .aui-toolbar2-primary, #rte-ellipsis-menu, #rte-ellipsis-menu > div > ul, .dialog-button-panel, form.aui .buttons-container > .buttons, .sc-fytwQQ.gskAyi, .dashboard-item-header, li.ghx-column.jxls-agile-board-header, #property-panel .panel-buttons, .eXagFC
+ /*   */ {
+	display: flex !important;
+}
