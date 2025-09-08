@@ -17,7 +17,7 @@
 
 // @author               bezustally
 
-// @version              4.1
+// @version              4.1.1
 // @updated              2025-09-08
 
 // ==/UserScript==
@@ -880,7 +880,7 @@
 
 		// #region: св
 
-		[/свое(м|)/g, "своё$1"],
+		[/ свое(м|) /g, " своё$1 "],
 
 		// #endregion
 
