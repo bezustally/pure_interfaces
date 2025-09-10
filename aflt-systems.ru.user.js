@@ -16,7 +16,7 @@
 
 // @author               bezustally
 
-// @version              4.1
+// @version              4.2
 // @updated              2025-01-27
 
 // ==/UserScript==
@@ -71,13 +71,17 @@ setTimeout(() => {
 		}
 
 		.aflt-timespent-additional {
-			margin-right: 12px;
-			display: flex;
+			display: inline-flex;
 			gap: 3px;
+			margin-left: 12px;
 		}
 
 		.aflt-timespent-additional .aflt-timespent-btn {
-			opacity: 0.8;
+			opacity: 0;
+		}
+
+		.aflt-timespent-additional:hover .aflt-timespent-btn {
+			opacity: 0.8 !important;
 		}
 
 	`;
@@ -159,7 +163,7 @@ setTimeout(() => {
 			// Create additional buttons container (+30m, -30m)
 			const additionalContainer = document.createElement("span");
 			additionalContainer.className = "aflt-timespent-additional";
-			
+
 			// +30m button
 			const addButton = document.createElement("button");
 			addButton.type = "button";
@@ -167,7 +171,7 @@ setTimeout(() => {
 			addButton.className = BUTTON_CLASS;
 			addButton.addEventListener("click", () => {
 				input.focus();
-				const currentValue = input.value || '';
+				const currentValue = input.value || "";
 				const newValue = addTime(currentValue, 30);
 				const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
 				nativeInputValueSetter.call(input, newValue);
@@ -182,7 +186,7 @@ setTimeout(() => {
 				}, 150);
 			});
 			additionalContainer.appendChild(addButton);
-			
+
 			// -30m button
 			const subtractButton = document.createElement("button");
 			subtractButton.type = "button";
@@ -190,7 +194,7 @@ setTimeout(() => {
 			subtractButton.className = BUTTON_CLASS;
 			subtractButton.addEventListener("click", () => {
 				input.focus();
-				const currentValue = input.value || '';
+				const currentValue = input.value || "";
 				const newValue = subtractTime(currentValue, 30);
 				const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
 				nativeInputValueSetter.call(input, newValue);
@@ -205,7 +209,7 @@ setTimeout(() => {
 				}, 150);
 			});
 			additionalContainer.appendChild(subtractButton);
-			
+
 			// Create main buttons container
 			const container = document.createElement("div");
 			container.className = BUTTONS_CLASS;
@@ -230,10 +234,10 @@ setTimeout(() => {
 				});
 				container.appendChild(button);
 			});
-			
+
 			// Insert additional buttons first, then main buttons
-			input.parentNode.insertBefore(additionalContainer, input.nextSibling);
 			input.parentNode.insertBefore(container, input.nextSibling);
+			input.parentNode.insertBefore(additionalContainer, input.nextSibling);
 		}
 	}
 
