@@ -16,8 +16,8 @@
 
 // @author               bezustally
 
-// @version              4.0
-// @updated              2025-09-10
+// @version              4.1
+// @updated              2025-01-27
 
 // ==/UserScript==
 
@@ -70,12 +70,71 @@ setTimeout(() => {
 			background-color: var(--aui-link-hover-color);
 		}
 
+		.aflt-timespent-additional {
+			margin-right: 12px;
+			display: flex;
+			gap: 3px;
+		}
+
+		.aflt-timespent-additional .aflt-timespent-btn {
+			opacity: 0.8;
+		}
+
 	`;
 	document.head.appendChild(style);
 })();
 
 // === Add buttons for input#timeSpentSeconds ===
 (function addTimeButtonsWithObserver() {
+	// === Time parsing and calculation functions ===
+	function parseTimeToMinutes(timeString) {
+		if (!timeString || timeString.trim() === "") return 0;
+
+		const timeStr = timeString.trim().toLowerCase();
+		let totalMinutes = 0;
+
+		// Parse hours (h)
+		const hourMatch = timeStr.match(/(\d+(?:\.\d+)?)\s*h/);
+		if (hourMatch) {
+			totalMinutes += Math.floor(parseFloat(hourMatch[1]) * 60);
+		}
+
+		// Parse minutes (m)
+		const minuteMatch = timeStr.match(/(\d+)\s*m/);
+		if (minuteMatch) {
+			totalMinutes += parseInt(minuteMatch[1]);
+		}
+
+		return totalMinutes;
+	}
+
+	function minutesToTimeString(minutes) {
+		if (minutes <= 0) return "0m";
+
+		const hours = Math.floor(minutes / 60);
+		const remainingMinutes = minutes % 60;
+
+		if (hours === 0) {
+			return `${remainingMinutes}m`;
+		} else if (remainingMinutes === 0) {
+			return `${hours}h`;
+		} else {
+			return `${hours}h ${remainingMinutes}m`;
+		}
+	}
+
+	function addTime(currentTime, minutesToAdd) {
+		const currentMinutes = parseTimeToMinutes(currentTime);
+		const newMinutes = Math.max(0, currentMinutes + minutesToAdd);
+		return minutesToTimeString(newMinutes);
+	}
+
+	function subtractTime(currentTime, minutesToSubtract) {
+		const currentMinutes = parseTimeToMinutes(currentTime);
+		const newMinutes = Math.max(0, currentMinutes - minutesToSubtract);
+		return minutesToTimeString(newMinutes);
+	}
+
 	const BUTTONS = [
 		{ label: "15m", value: "15m" },
 		{ label: "30m", value: "30m" },
@@ -97,6 +156,57 @@ setTimeout(() => {
 	function addButtonsIfNeeded() {
 		const input = document.getElementById("timeSpentSeconds");
 		if (input && !input.parentNode.querySelector("." + BUTTONS_CLASS)) {
+			// Create additional buttons container (+30m, -30m)
+			const additionalContainer = document.createElement("span");
+			additionalContainer.className = "aflt-timespent-additional";
+			
+			// +30m button
+			const addButton = document.createElement("button");
+			addButton.type = "button";
+			addButton.textContent = "+30m";
+			addButton.className = BUTTON_CLASS;
+			addButton.addEventListener("click", () => {
+				input.focus();
+				const currentValue = input.value || '';
+				const newValue = addTime(currentValue, 30);
+				const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+				nativeInputValueSetter.call(input, newValue);
+				input.dispatchEvent(new Event("input", { bubbles: true }));
+				input.dispatchEvent(new Event("change", { bubbles: true }));
+				input.blur();
+				setTimeout(() => {
+					const submitBtn = document.querySelector('button[name="submitWorklogButton"]');
+					if (submitBtn && !submitBtn.disabled) {
+						submitBtn.click();
+					}
+				}, 150);
+			});
+			additionalContainer.appendChild(addButton);
+			
+			// -30m button
+			const subtractButton = document.createElement("button");
+			subtractButton.type = "button";
+			subtractButton.textContent = "-30m";
+			subtractButton.className = BUTTON_CLASS;
+			subtractButton.addEventListener("click", () => {
+				input.focus();
+				const currentValue = input.value || '';
+				const newValue = subtractTime(currentValue, 30);
+				const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+				nativeInputValueSetter.call(input, newValue);
+				input.dispatchEvent(new Event("input", { bubbles: true }));
+				input.dispatchEvent(new Event("change", { bubbles: true }));
+				input.blur();
+				setTimeout(() => {
+					const submitBtn = document.querySelector('button[name="submitWorklogButton"]');
+					if (submitBtn && !submitBtn.disabled) {
+						submitBtn.click();
+					}
+				}, 150);
+			});
+			additionalContainer.appendChild(subtractButton);
+			
+			// Create main buttons container
 			const container = document.createElement("div");
 			container.className = BUTTONS_CLASS;
 			BUTTONS.forEach(btn => {
@@ -120,6 +230,9 @@ setTimeout(() => {
 				});
 				container.appendChild(button);
 			});
+			
+			// Insert additional buttons first, then main buttons
+			input.parentNode.insertBefore(additionalContainer, input.nextSibling);
 			input.parentNode.insertBefore(container, input.nextSibling);
 		}
 	}
