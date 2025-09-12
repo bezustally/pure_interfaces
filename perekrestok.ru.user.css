@@ -1,0 +1,102 @@
+/*  */
+
+/* ==UserStyle==
+
+@name                 Perekrestok Dark Mode
+
+@namespace            https://github.com/bezustally/pure_interfaces
+
+@match                *://*.perekrestok.ru/*
+
+@author               bezustally
+
+@version              2.2
+@updated              2025-09-12
+
+==/UserStyle== */
+
+/*  */
+
+/* #region dark mode */
+
+@media (prefers-color-scheme: dark) {
+	/*  */
+
+	:root {
+		--dark: #282c35;
+		--lighter: #4c4e52;
+		--grey: rgb(120, 124, 135);
+	}
+
+	/* #region: BACKGROUND */
+
+	/* transparent background */
+	.omnichat-bg-white
+	/*  */ {
+		background-color: transparent !important;
+	}
+
+	/* dark background */
+	.transaction-card-content, .tabs__buttons, .tab__button, .header__search-suggest, .delivery-popup, .product-panel, .transaction-feed-card-header, .order-panel, #payment-card-dropdown, header, footer, .delivery-button, .modal-content, .search-form__inner input, /* additional links */ .sc-kmATbt.bGRjUH, .cart-control__input input, .cart-control__value-inner, body, .header__bottom, .header__main-header, .cart-aside, .chat-frame, /* feedback button */ .sc-eCstlR.djqBVS.sc-jQbJRc.hFrKdI, .cart-control__content
+	/*  */ {
+		background-color: var(--dark) !important;
+	}
+
+	/* not so dark background */
+	.switcher, #price-card, .iNzACU /* social media icons in footer */, .cart-aside-total .sc-lgqlnP.fdBYVd /* free delivery button */, .sc-citxvW.hXLUek /* important notification bar */, .product-card, .personal-offer-card, .sc-fnlXEO.bpQYzM /* checkout layout */
+	/*  */ {
+		background-color: var(--lighter) !important;
+	}
+
+	/* #endregion */
+
+	/* #region: TEXT */
+
+	/* white */
+	.product__name, .sc-dlfnuX.fCHXmV /* ingregients */, .product-features-tab-description, .product-calories-list, .button-children, .text-disclaimer, .product__title, .Flex-brknwi-0.cVQRKC /* search results title */, .sc-hmftZk.fOXnxI /* order title */, .checkout-details, .phone-link-tel, .text-beneath, .delivery-content__title, /* У вас уже есть карта X5 Клуба */ .sc-gKseQn.bYhvIh, /* order number */ .sc-gKseQn.iiCdTy, .set-delivery-time__title, .checkout-aside-detail, /* important notification bar */ .sc-citxvW.hXLUek, .checkout-aside-title, .menu-link, .product-card__title, .cart-control__input input, .cart-control__value-inner, .cart-control__content,  /* page title */ .sc-gKseQn.iRCsG, .price-new, .product-name, .page-title, .tab-carousel__content a, .cart-aside-detail, .cart-aside-property, .cart-aside-title span, .chat-frame-title
+	/*  */ {
+		color: white !important;
+	}
+
+	/* grey */
+	.additional-link
+	/*  */ {
+		color: var(--grey) !important;
+	}
+
+	/* #endregion */
+
+	/* #region: BORDER */
+
+	/* 0.66 white border */
+	.cart-aside, .chat-frame, .tab__button, .header__search-suggest, .delivery-popup, .search-form__inner input, .switcher, .modal-content, .transaction-feed-card-header, .transaction-card-content
+	/*  */ {
+		border: 1px solid rgba(255, 255, 255, 0.66) !important;
+	}
+
+	/* 0.66 not so dark border */
+	.sc-fFucqa.AvPMp /* support button */, .tabs__buttons,  .sc-eCstlR.djqBVS.sc-jQbJRc.hFrKdI  /* feedback button */
+	/*  */ {
+		border: 2px solid var(--lighter) !important;
+	}
+
+	/* no bottom border */
+	.sc-eCstlR.djqBVS.sc-jQbJRc.hFrKdI /* feedback button */
+	/*  */ {
+		border-bottom: none !important;
+	}
+
+	/* #endregion */
+
+	/* #region: BORDER RADIUS */
+
+	/* border radius 12px */
+	.transaction-feed-card-header
+	/*  */ {
+		border-radius: 12px !important;
+	}
+
+	/* #endregion */
+}
+
+/* #endregion */
