@@ -1,0 +1,87 @@
+/*  */
+
+/* ==UserStyle==
+
+@name                 Veg Perekrestok
+
+@namespace            https://github.com/bezustally/pure_interfaces
+
+@match                *://*.perekrestok.ru/*
+
+@author               bezustally
+
+@version              1.0
+@updated              2025-09-12
+
+==/UserStyle== */
+
+/*  */
+
+/* #region: display: none */
+
+.product-card-wrapper:has(a:is(
+	/*
+		 */	[href="/cat/30/p/kotlety-iz-telatiny-s-sousom-iz-belyh-gribov-i-kartofelnym-pure-s-trufelnym-maslom-perekrestok-select-350g-4294422"],	[href="/cat/1119/p/salat-nisuaz-s-file-kusockami-tunca-zapecennogo-i-gorcicno-medovym-sousom-perekrestok-select-215g-4398544"],	[href="/cat/30/p/saslycok-iz-kurinogo-bedra-v-slivocno-pranom-marinade-perekrestok-select-200g-4402005"],	[href="/cat/32/p/salat-kimci-iz-kvasenyh-ovosej-iz-pekinskoj-kapusty-perekrestok-select-200-g-4377397"],	[href="/cat/30/p/kurica-s-ananasom-v-kislo-sladkom-souse-i-risom-perekrestok-select-250g-4272455"],	[href="/cat/1118/p/kotlety-kurinye-zarenye-s-kartofelnym-pure-perekrestok-select-450g-4385431"],	[href="/cat/30/p/tortiloni-s-indejkoj-i-sousom-iz-fenhela-perekrestok-select-300g-4289870"],	[href="/cat/32/p/salat-s-kurinym-file-funcozoj-i-ovosami-perekrestok-select-220g-4364440"],	[href="/cat/1046/p/muss-iz-manki-s-rikottoj-i-klukvoj-perekrestok-select-220g-4181697"],	[href="/cat/1119/p/salat-s-govazej-pecenu-sampinonami-i-greckim-orehom-180g-4406504"],	[href="/cat/1119/p/salat-iz-svekly-s-cesnokom-perekrestok-select-180g-4401911"],	[href="/cat/1119/p/salat-olive-s-govadinoj-perekrestok-select-180g-4406510"],	[href="/cat/32/p/vinegret-ovosnoj-perekrestok-select-s-maslom-500g-4133219"],	[href="/cat/27/p/bliny-s-vetcinoj-i-syrom-perekrestok-select-400g-4335247"],	[href="/cat/1119/p/nabor-dla-okroski-perekrestok-select-170g-4408387"],	[href="/cat/1119/p/salat-s-vetcinoj-perekrestok-select-180g-4406509"],	[href="/cat/30/p/vok-s-kuricej-perekrestok-select-250g-4175864"],	[href="/cat/32/p/salat-cezar-perekrestok-select-220g-4225649"],	[href="/cat/296/p/salat-iz-svekly-s-cesnokom-3682214"],	[href="/cat/296/p/salat-stolicnyj-s-kuricej-4311077"],	[href="/cat/32/p/salat-s-kurinym-file-kinoa-i-ovosami-perekrestok-select-200g-4364441"],	[href="/cat/32/p/salat-seld-pod-suboj-perekrestok-select-250g-3682462"],	[href="/cat/32/p/salat-olive-perekrestok-select-200g-3681186"],	[href="/cat/296/p/salat-olive-4311078"],	[href="/cat/32/p/vinegret-ovosnoj-perekrestok-select-180g-3681084"],	[href="/cat/32/p/salat-olive-perekrestok-select-500g-4133217"],	[href="/cat/296/p/salat-seld-pod-suboj-3913786"],	[href="/cat/32/p/salat-s-kurinym-file-i-kartofelem-paj-perekrestok-select-200g-4364436"],	[href="/cat/32/p/salat-s-kopcenoj-kuricej-ablokami-orehami-i-seldereem-perekrestok-select-200g-4268962"],	[href="/cat/32/p/salat-seld-pod-suboj-perekrestok-select-500g-4199785"],	[href="/cat/32/p/poke-s-krevetkami-i-sousom-alterno-perekrestok-select-210g-4276196"],	[href="/cat/1119/p/morkov-po-korejski-perekrestok-select-200g-4405770"],	[href="/cat/1119/p/morkov-po-korejski-perekrestok-select-500g-4405771"],	[href="/cat/32/p/boul-s-kurinoj-grudkoj-kinoa-i-svezimi-ovosami-perekrestok-select-165g-4385617"],	[href="/cat/32/p/salat-greceskij-perekrestok-select-190g-4391677"],	[href="/cat/296/p/salat-sef-perekrestok-iz-kuricy-gril-po-korejski-4311079"],	[href="/cat/1119/p/salat-stolicnyj-s-kuricej-perekrestok-select-180g-4401910"],	[href="/cat/1119/p/kapusta-s-morkovu-po-korejski-perekrestok-select-200g-4405772"],	[href="/cat/32/p/salat-s-indejkoj-edammame-i-aziatskim-sousom-perekrestok-select-190g-4303583"],	[href="/cat/1119/p/salat-zelenyj-s-kurinym-file-i-sousom-cimicurri-perekrestok-select-170g-4409527"],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+	[href=""],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	))
+/*  */ {
+	display: none;
+}
+
+/* #endregion */
