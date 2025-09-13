@@ -1,0 +1,37 @@
+/*  */
+
+/* ==UserStyle==
+
+@name               Pure Telegram
+
+@namespace          https://github.com/bezustally/pure_interfaces
+
+@match              *://*.t.me/*
+@match              *://web.telegram.org/*
+
+@author             bezustally
+
+@version            1.0
+@updated            2025-09-13
+
+==/UserStyle== */
+
+/*  */
+
+/* opacity: 0 */
+canvas.chat-background-item-canvas.chat-background-item-pattern-canvas
+/*  */ {
+	opacity: 0 !important;
+}
+
+/* height: unset */
+.tgme_background_wrap
+/*  */ {
+	height: unset !important;
+}
+
+/* background: none */
+body.twallpaper .tgme_background_pattern
+/*  */ {
+	background: none;
+}
