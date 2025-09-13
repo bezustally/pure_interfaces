@@ -1,0 +1,30 @@
+/*  */
+
+/* ==UserStyle==
+
+@name               Pure t-j.ru
+
+@namespace          https://github.com/bezustally/pure_interfaces
+
+@match              *://*.t-j.ru/*
+
+@author             bezustally
+
+@version            1.0
+@updated            2025-09-13
+
+==/UserStyle== */
+
+/*  */
+
+/* opacity: 0 */
+[data-tj-layout-id="navbar"]
+/*  */ {
+	opacity: 0 !important;
+}
+
+/* opacity: 1 */
+[data-tj-layout-id="navbar"]:hover
+/*  */ {
+	opacity: 1 !important;
+}
