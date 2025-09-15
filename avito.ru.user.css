@@ -1,0 +1,38 @@
+/*  */
+
+/* ==UserStyle==
+
+@name                 Pure Avito
+
+@license              CC BY-NC-ND 4.0. Usage, modification and distribution are permitted only with the author's attribution and without commercial use. Any modifications without the author's consent are prohibited. Использование, изменение и распространение разрешены только с указанием авторства и без коммерческого использования. Запрещены любые модификации без согласия автора.
+
+@namespace            https://github.com/bezustally/pure_interfaces
+
+@match                *://*.avito.ru/*
+
+@author               bezustally
+
+@version              1.0
+@updated              2025-09-15
+
+==/UserStyle== */
+
+/*  */
+
+/* Hide ads with advertising class */
+[class*="items-ads-"]
+/*  */ {
+	display: none !important;
+}
+
+/* Hide advertising containers */
+.avito-ads-container_wl, .avito-ads-container_tgb2
+/*  */ {
+	display: none !important;
+}
+
+/* Hide advertising blocks inside .js-item-view-main that contain sale banner title */
+.js-item-view-main div:has([data-marker="saleBanner/title"])
+/*  */ {
+	display: none !important;
+}
