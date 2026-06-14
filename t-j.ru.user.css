@@ -29,6 +29,7 @@
 	opacity: 1 !important;
 }
 
+/* Centering the main content */
 /* margin-left: -285px */
 [data-tj-layout-id="navbar"] + main
 /*  */ {
